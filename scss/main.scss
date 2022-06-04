@@ -1,6 +1,9 @@
 @import "./resets.scss";
 @import "./_variables";
 
+@function weight($weight-name){
+    @return map-get($font-weights,$weight-name);
+}
 
 body{
     background-color: $primary-color;
